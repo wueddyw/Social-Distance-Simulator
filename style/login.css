@@ -1,0 +1,13 @@
+header {
+    grid-area: header;
+    display:flex;
+    justify-content: center;
+    background-color: grey;
+}
+body{
+    margin: 0;
+    /* https://www.fredhutch.org/en/news/center-news/2020/03/covid19---social-distancing--in-seattle-and-beyond.html */
+    background-image: url(../images/social-distancing.jpg);
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: lighten;
+}

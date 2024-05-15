@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Distancing Simulator</title>
+
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.23.0/dist/phaser.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAM863d1r4g9FShKvZ00pgsYVEQ_3LoDDs",
+            authDomain: "social-distancing-simulator.firebaseapp.com",
+            databaseURL: "https://social-distancing-simulator.firebaseio.com",
+            projectId: "social-distancing-simulator",
+            storageBucket: "social-distancing-simulator.appspot.com",
+            messagingSenderId: "737901223848",
+            appId: "1:737901223848:web:92892d643ad69cecda479d",
+            measurementId: "G-2N128JG6QV"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+    </script>
+
+</head>
+
+<body>
+    <main id="main">
+        <header>
+            <img src="images/logo.png" alt="Logo" id="logo">
+        </header>
+        <section id="play">
+            <div id = "menu">
+                <input type="button" value="Play" onclick="window.open('game.html','_self')">
+                <input type="button" value="Tutorial" onclick="window.open('tutorial.html','_self')">
+                <input type="button" value="About Us" onclick="window.open('aboutus.html','_self')">
+                <input type="button" value="logout" onclick = "logout()">
+            </div>
+        </section>
+        <section id="leaderboard">
+            <h3>Leaderboard</h3>
+            <table>
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>data</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>data</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>data</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>data</td>
+                </tr>
+            </table>
+        </section>
+        <section id="account">
+            <h3>Account Info</h3>
+        </section>
+        <footer>
+            <h5>Footer</h5>
+        </footer>
+    </main>
+        <div id="my-game"></div>
+    <!-- Firebase Scripts -->
+    <script src="script/create_user.js"></script>
+    <script src="script/logout.js"></script>
+    <!-- Game Scripts -->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.23.0/dist/phaser.js"></script>
+    <!--<script src="script/game.js"></script>-->
+    <script>
+        createUser();
+    </script>
+    <!--<script src="script/foods.js"></script>-->
+    <script src="script/game.js"></script>
+
+    <script>
+        createUser();
+    </script>
+
+
+    <script>
+        createUser();
+    </script>
+
+</body>
+
+</html>

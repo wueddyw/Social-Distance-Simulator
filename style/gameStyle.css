@@ -1,0 +1,31 @@
+
+body {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#listSection {
+    padding:1em;
+    background-color:#e5e5a0;
+    box-shadow:grey 0.25em 0.25em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#listSection h1 {
+    font-size:3em;
+}
+
+#list {
+    list-style:circle;
+    font-size:2em;
+}
+
+.crossedOff {
+    text-decoration:line-through;
+}
+#player{
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
